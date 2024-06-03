@@ -1,0 +1,64 @@
+h1 {
+    color: black;
+}
+
+p1 {
+    color: black;
+}
+
+body { 
+    margin: 0;
+}
+
+.header {
+    background: url(avia_background.jpg); 
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background: lightgray;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.row {
+    display: flex;
+}
+
+.main {
+    flex: 70%;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Страница авторизации</title>
+</head>
+
+<body>
+    <h1 id="TEXTDATA">Авторизируйтесь</h1>
+    <h1>Авторизируйтесь для входа на сайт</h1>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Логин">
+
+    <br><br>
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Пароль">
+
+    <br><br>
+    <input type="button" value="Войти" onclick="login()">
+
+</body>
+
+<script>
+        function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var message = document.getElementById("message");
+        var loginForm = document.getElementById("loginForm");
+    
+     }
+    
+        function clearFields() {
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+            document.getElementById("message").innerHTML = "";
+     }
+     </script>
+    
+</body>
+    </html>
+
+</html>
